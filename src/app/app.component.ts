@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Etudiant } from './etudiant';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TDForms';
+  specialites = ['DSI' , 'MDW', 'RSI'];
+  etudiant = new Etudiant("Nabil","nabil@gmail.com","DSI");
+  
 }
